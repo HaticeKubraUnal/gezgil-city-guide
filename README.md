@@ -1,6 +1,6 @@
 # 🌍 GEZGİL - City Guide Web Application
 
-**👉 [(Live Demo)](https://haticekubraunal.github.io/gezgil-city-guide/HTML/Gezgil.html)**
+## 👉 [(Live Demo)](https://haticekubraunal.github.io/gezgil-city-guide/HTML/Gezgil.html)
 
 A dynamic and fully responsive city guide website project introducing historical and natural places. This project was developed as part of the **Internet Technologies** course in **May 2025**.
 
