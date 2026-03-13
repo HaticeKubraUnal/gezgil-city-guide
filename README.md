@@ -29,8 +29,6 @@ Gezgil is designed to guide users through the natural beauties, historical sites
 **Hatice Kübra Ünal** *2nd Year Computer Engineering Student at Sivas Cumhuriyet University*
 
 ## 📸 Project Screenshots
-<img width="2459" height="1402" alt="Gezgil-screenshots-1" src="https://github.com/user-attachments/assets/1739d11f-ec93-4709-b1ae-03bb3b24fa5e" />
-
-<img width="2473" height="1396" alt="Gezgil-screenshots-2" src="https://github.com/user-attachments/assets/30e2a8b5-96ba-4553-be1f-56908bcc4164" />
-
-<img width="2454" height="1391" alt="Gezgil-screenshots-3" src="https://github.com/user-attachments/assets/d6a01686-84a0-4753-b18d-f3c64f01304b" />
+<img width="2459" height="1402" alt="Gezgil-screenshots-1" src="https://github.com/user-attachments/assets/9bbf1e9d-8cfa-4902-9fce-ab28e2def53c" />
+<img width="2473" height="1396" alt="Gezgil-screenshots-2" src="https://github.com/user-attachments/assets/f33713ce-86b0-49d5-94e8-1f7e7cc4f831" />
+<img width="2454" height="1391" alt="Gezgil-screenshots-3" src="https://github.com/user-attachments/assets/eec239f1-cd8d-4cf5-99c4-4615e0439b4e" />
