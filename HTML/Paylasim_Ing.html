@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEZGİL</title>
+  <link rel="stylesheet" href="../CSS/stilPaylasim.css" />
+</head> <!--Hatice aa@gmail.com aa      Kübra bb@gmail.com bb-->
+<body>
+  <header>
+    <div class="header-left">
+      <h1>GEZGİL-User Feedback</h1>
+    </div>
+    <div class="header-center">
+      <img src="Görsel/logo.png" width="150px" height="150px" />
+    </div>
+    <div class="header-right">
+      <a href="Gezgil_Ing.html"><strong>Main Menu</strong></a>
+      <a href="Daha_Ing.html"><strong>Travel Guide</strong></a>
+      <a href="KullaniciGirisi_Ing.html" class="oturum"><strong>Sign Up</strong></a>
+    </div>
+  </header>
+
+  <div class="same">
+    <div>
+      <p>Novice Professionals Corner</p>
+    </div>
+    <div class="gal-wrapper">
+      <div class="gal-scroll">
+        <div class="gal-card"><img src="Görsel/karma1.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma2.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma3.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma4.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma5.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma6.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma7.jpeg"></div>
+        <div class="gal-card"><img src="Görsel/karma8.jpeg"></div>
+      </div>
+    </div>
+    <div class="siz">
+      <a href="KullaniciGirisi_Ing.html">Share with us➜</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="genel">
+      <div class="container">
+
+        <!-- Giriş yapan kullanıcı adı -->
+        <div class="kullanici" id="kullaniciAd">Share your photo and get featured in the Novice Professionals section.</div>
+
+        <!-- Fotoğraf & yorum alanı giriş yapan kullanıcıya görünür -->
+        <div class="yorum" id="yorum-alan" style="display:none;">
+          <input type="file" id="photoInput" accept="image/*" multiple />
+          <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+          <div style="display: flex; gap: 10px;">
+            <button id="paylasButton">Share</button>
+            <button id="cikisButton" style="background-color:#718096;">Log out</button>
+          </div>
+        </div>
+
+        <!-- Giriş yapılmamışsa uyarı -->
+        <div id="girisUyari" style="margin-top: 20px; color: #666;">
+          Log in to share photo.
+        </div>
+
+        <!-- Galeri alanı -->
+        <div class="degerlendirme" style="margin-top: 30px;">
+          <div class="gallery-and-comment">
+            <div class="foto" id="foto-alan">
+              <div class="gallery-wrapper">
+                <div class="gallery-scroll" id="galleryScroll">
+                  <!-- JS ile yüklenecek tüm kullanıcı fotoğrafları -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+      <div class="footer-left">
+        <strong>Contact</strong><br><br>
+        Phone: +90 555 555 55 55<br>
+        E-mail: ornek@ornek.com
+        <br><br><br>
+        <p>&copy; 2025 GEZGİL. All rights reserved.</p>
+      </div>
+      <div>
+        ______
+        <strong class="bilgi">Social Media Accounts</strong>
+        ______
+        <br><br>
+        <p>
+          <a href="https://www.instagram.com/bnur.karatag.6/?hl=tr" target="_blank"><img src="Görsel/instagram.png" width="50px" height="50x"></a>
+          <a href="#"><img src="Görsel/Youtube.png" width="50px" height="50x"></a>
+          <a href="https://wa.me/905372083223" target="_blank"><img src="Görsel/whatsapp.png" width="50px" height="50x"></a>
+          <a href="https://www.linkedin.com/in/hatice-k%C3%BCbra-%C3%BCnal-083aba329/" target="_blank"><img src="Görsel/linkedin.png" width="50px" height="50x"></a>
+          <a href="https://tr.pinterest.com/eleanor970797/gezgi%CC%87l-manavgat/" target="_blank"><img src="Görsel/pinterest.png" width="50px" height="50x"></a>
+        </p>
+        <p>_________________________________</p><br>
+      </div>
+      <div class="footer-center">
+        <strong>Adress : </strong><br><br>
+        Sivas Cumhuriyet Univercity <br>/ Engineering Faculty
+      </div>
+    </footer>
+
+  <script>
+// Mevcut kullanıcı
+let currentUser = localStorage.getItem('currentUser');
+
+const kullaniciAd = document.getElementById('kullaniciAd');
+const yorumAlan = document.getElementById('yorum-alan');
+const girisUyari = document.getElementById('girisUyari');
+const galleryScroll = document.getElementById('galleryScroll');
+const photoInput = document.getElementById('photoInput');
+const commentInput = document.getElementById('commentInput');
+const paylasButton = document.getElementById('paylasButton');
+const cikisButton = document.getElementById('cikisButton');
+
+// Giriş kontrolü ve arayüz ayarı
+function updateUI() {
+  if (currentUser) {
+    kullaniciAd.textContent = `Welcome, ${currentUser}`;
+    yorumAlan.style.display = 'block';
+    girisUyari.style.display = 'none';
+  } else {
+    kullaniciAd.textContent = 'Share your photo and get featured in the Novice Professionals section.';
+    yorumAlan.style.display = 'none';
+    girisUyari.style.display = 'block';
+  }
+}
+
+// Paylaşımları gruplandırarak yükle
+function loadGallery() {
+  const allPhotos = JSON.parse(localStorage.getItem('allPhotos')) || [];
+  galleryScroll.innerHTML = '';
+
+  // Kullanıcıya göre gruplama
+  const grouped = {};
+  allPhotos.forEach(item => {
+    if (!grouped[item.username]) {
+      grouped[item.username] = [];
+    }
+    grouped[item.username].push(item);
+  });
+
+  // Her kullanıcı için blok oluştur
+  for (const username in grouped) {
+    const userBlock = document.createElement('div');
+    userBlock.className = 'user-photo-block';
+
+    const usernameHeader = document.createElement('h3');
+    usernameHeader.textContent = username;
+    usernameHeader.className = 'username-header';
+    userBlock.appendChild(usernameHeader);
+
+    const photoContainer = document.createElement('div');
+    photoContainer.className = 'photo-container';
+
+    grouped[username].forEach((item) => {
+      const card = document.createElement('div');
+      card.className = 'gallery-card';
+
+      const img = document.createElement('img');
+      img.src = item.photo;
+      card.appendChild(img);
+
+      const commentP = document.createElement('p');
+      commentP.textContent = item.comment || '';
+      card.appendChild(commentP);
+
+      if (currentUser && item.username === currentUser) {
+        const delBtn = document.createElement('button');
+        delBtn.className = 'delete-btn';
+        delBtn.textContent = '×';
+        delBtn.onclick = () => {
+          const indexToRemove = allPhotos.findIndex(p =>
+            p.photo === item.photo &&
+            p.username === item.username &&
+            p.comment === item.comment
+          );
+          if (indexToRemove !== -1) {
+            if (confirm('Are you sure that you want to denete this phot?')) {
+              allPhotos.splice(indexToRemove, 1);
+              localStorage.setItem('allPhotos', JSON.stringify(allPhotos));
+              loadGallery();
+            }
+          }
+        };
+        card.appendChild(delBtn);
+      }
+
+      photoContainer.appendChild(card);
+    });
+
+    userBlock.appendChild(photoContainer);
+    galleryScroll.appendChild(userBlock);
+  }
+}
+
+// Paylaşım yap
+paylasButton.onclick = () => {
+  const files = photoInput.files;
+  const comment = commentInput.value.trim();
+
+  if (files.length === 0) {
+    alert('Upload at least one photo!');
+    return;
+  }
+
+  const allPhotos = JSON.parse(localStorage.getItem('allPhotos')) || [];
+
+  Array.from(files).forEach(file => {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      allPhotos.push({
+        username: currentUser,
+        photo: e.target.result,
+        comment: comment // yorum boş olsa da eklenir
+      });
+      localStorage.setItem('allPhotos', JSON.stringify(allPhotos));
+      loadGallery();
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Temizle
+  photoInput.value = '';
+  commentInput.value = '';
+};
+
+// Çıkış yap
+cikisButton.onclick = () => {
+  localStorage.removeItem('currentUser');
+  currentUser = null;
+  updateUI();
+  loadGallery();
+};
+
+// Sayfa yüklendiğinde
+updateUI();
+loadGallery();
+
+function scrollLeft() {
+      document.querySelector('.gallery-scroll').scrollBy({
+        left: -320,
+        behavior: 'smooth'
+      });
+    }
+  
+    function scrollRight() {
+      document.querySelector('.gallery-scroll').scrollBy({
+        left: 320,
+        behavior: 'smooth'
+      });
+    }
+</script>
+
+</body>
+</html>

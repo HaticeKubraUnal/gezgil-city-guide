@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kullanıcı Girişi - GEZGİL</title>
+  <link rel="stylesheet" href="../CSS/stilKullaniciGirisi.css" />
+</head>
+<body>
+  <div class="auth-section" id="authSection">
+    <input type="text" id="username" placeholder="User Name" />
+    <input type="email" id="email" placeholder="E-mail" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="registerUser()">Sign Up</button>
+    <button onclick="loginUser()">Log In</button>
+  </div>
+
+  <script>
+    function registerUser() {
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      if (!username || !email || !password) {
+        alert('Please fill in all boxes.');
+        return;
+      }
+      if (localStorage.getItem(username)) {
+        alert('This user name already exist');
+        return;
+      }
+      localStorage.setItem(username, JSON.stringify({ email, password }));
+      alert('Registration successful. You can log in.');
+    }
+
+    function loginUser() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const userData = localStorage.getItem(username);
+      if (!userData) {
+        alert('This username do not exist');
+        return;
+      }
+      const { password: storedPassword } = JSON.parse(userData);
+      if (storedPassword !== password) {
+        alert('Invalid Password');
+        return;
+      }
+      localStorage.setItem('currentUser', username);
+      window.location.href = 'paylasim_Ing.html';
+    }
+  </script>
+</body>
+</html>

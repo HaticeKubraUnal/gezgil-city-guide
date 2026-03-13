@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Guide</title>
+  <link rel="stylesheet" href="../CSS/stil.css">
+</head>
+
+<body>
+  <div class="icerik">
+
+  <header>
+    <video autoplay muted loop id="arkavideo">
+      <source src="Görsel/animasyon.mp4" type="video/mp4">
+    </video>
+
+    <div class="brand">
+      <div class="logo">
+        <img src="Görsel/logo.png" width="110px" height="110px">
+      </div>
+      <div class="site-name">GEZGİL</div>
+    </div>
+    <nav>
+      <a href="Rehber_Ing.html">Travel Guide</a>
+      <a href="İletisim_Ing.html">Contact</a>
+      <a href="Hakkinda_Ing.html">About Us</a>
+      <a href="Daha_Ing.html">General Guide</a>
+      <a href="Paylasim_Ing.html">Your posts</a>
+      <a href="Gezgil.html"><img src="Görsel/TR.png" width="20px" height="20px"><br>TR</a>
+      <div class="arama-kutusu">
+        <input type="text" id="searchInput" placeholder="Arama...">
+        <button onclick="search()">🔍</button>
+      </div>
+      <br>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="welcome">
+        <h2><a href="Rehber_Ing.html">It's Time to <br> Discover the City <br> with GEZGİL</a></h2>
+      </div> 
+      <div class="not">
+        <h4>Did you know??</h4>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <p class="ileti">On a short trip to the <br> top of the Taurus Mountains, you can find <br> seashells at thousands of meters high.</p>
+            <p class="ileti">Tilkiler Cave in Manavgat is the <br> 3rd longest cave in Turkiye with 7036m.</p>
+            <p class="ileti">The song "Yıldızların Altında" was <br> written for the Manavgat River by <br> Ömer Bedrettin Uşaklı, who was the district <br> governor of Manavgat between 1928-1932.</p>
+            <p class="ileti">If you 're lucky enough, you can see <br> a Mediterranean seal which is <br> swimming in Manavgat River.</p>
+            <p class="ileti">Antalya is the greenest province in Turkey <br> with 1,177,000 hectares of forest area.</p>
+          </div>
+        </div>
+        <div class="ozel">
+          <button id="sesliOkuBtn" style="margin-top: 320px; margin-bottom:10px; padding:8px 12px; font-size:16px; background-color: whitesmoke;">Read the Page</button>
+          <button id="fontToggleBtn" style="margin-top: 320px; margin-right: 10px; margin-bottom:10px; padding: 8px 12px; font-size: 16px; background-color: whitesmoke;">Increase the Page</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="ara">
+    <p><strong>If you're ready to Discover</strong></p><br>
+    <a href="Paylasim_Ing.html"><strong>➜ Let's Start...</strong></a>  
+  </div>
+
+  <div class="user">
+    <div>
+      <p>Novice Professionals Corner</p>
+    </div>
+    <div class="gallery-wrapper">
+      <div class="gallery-scroll">
+        <div class="gallery-card"><img src="Görsel/karma1.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma2.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma3.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma4.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma5.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma6.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma7.jpeg"></div>
+        <div class="gallery-card"><img src="Görsel/karma8.jpeg"></div>
+      </div>
+    </div>
+    <div class="siz">
+      <a href="Paylasim_Ing.html">Share with us ➜</a>
+    </div>
+  </div>
+
+</div>   
+
+  <footer>
+    <div class="footer-left">
+      <strong>Contact</strong><br><br>
+      Phone: +90 555 555 55 55<br>
+      E-mail: ornek@ornek.com
+      <br><br><br>
+      <p>&copy; 2025 GEZGİL. All rights reserved.</p>
+    </div>
+    <div>
+      _
+      <strong class="bilgi">Sosyal Medya Hesaplarımız</strong>
+      _
+      <br><br>
+      <p></p>
+      <a href="https://www.instagram.com/bnur.karatag.6/?hl=tr" target="_blank"><img src="Görsel/instagram.png" width="50px" height="50x"></a>
+      <a href="https://wa.me/905372083223" target="_blank"><img src="Görsel/whatsapp.png" width="50px" height="50x"></a>
+      <a href="https://www.linkedin.com/in/hatice-k%C3%BCbra-%C3%BCnal-083aba329/" target="_blank"><img src="Görsel/linkedin.png" width="50px" height="50x"></a>
+      <a href="https://tr.pinterest.com/eleanor970797/gezgi%CC%87l-manavgat/" target="_blank"><img src="Görsel/pinterest.png" width="50px" height="50x"></a>
+      <p>___________________________</p><br>
+    </div>
+    <div class="footer-center">
+      <strong>Adress : </strong><br><br>
+      Sivas Cumhuriyet Univercity <br>/ Engineering Faculty
+    </div>
+  </footer>
+  
+  <script>
+    function scrollLeft() {
+      document.querySelector('.gallery-scroll').scrollBy({
+        left: -320,
+        behavior: 'smooth'
+      });
+    }
+  
+    function scrollRight() {
+      document.querySelector('.gallery-scroll').scrollBy({
+        left: 320,
+        behavior: 'smooth'
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider');
+    const items = document.querySelectorAll('.slider p');
+    const total = items.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % total;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 5000);
+    });
+
+    const btn = document.getElementById('sesliOkuBtn');
+    let konusuyor = false;
+
+    btn.addEventListener('click', () => {
+      if (!konusuyor) {
+        const metin = `
+          It's Time to Discover the City with GEZGİL. Did you know??
+          On a short trip to the top of the Taurus Mountains, you can find seashells at thousands of meters high.
+          Tilkiler Cave in Manavgat is the 3rd longest cave in Turkiye with 7036m.
+          The song "Yıldızların Altında" was written for the Manavgat River by Ömer Bedrettin Uşaklı, who was the district governor of Manavgat between 1928-1932.
+          If you 're lucky enough, you can see a Mediterranean seal which is swimming in Manavgat River.
+          Antalya is the greenest province in Turkey with 1,177,000 hectares of forest area.
+          If you're ready to Discover... Let's Start
+        `;
+
+        const msg = new SpeechSynthesisUtterance(metin);
+        msg.lang = 'en-US';
+        msg.rate = 1;
+        msg.pitch = 1;
+
+        msg.onstart = () => {
+          konusuyor = true;
+          btn.textContent = "Stop";
+        };
+
+        msg.onend = () => {
+          konusuyor = false;
+          btn.textContent = "Read the Page";
+        };
+
+        window.speechSynthesis.speak(msg);
+      } else {
+        window.speechSynthesis.cancel();
+        konusuyor = false;
+        btn.textContent = "Read the Page";
+      }
+    });
+
+  const fontToggleBtn = document.getElementById('fontToggleBtn');
+  let buyukYaziAktif = false;
+
+  fontToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('buyuk-yazi');
+    buyukYaziAktif = !buyukYaziAktif;
+    fontToggleBtn.textContent = buyukYaziAktif ? 'Decrease the Page' : 'Increase the Page';
+  });
+
+ // Türkçe karakterleri düzleştiren yardımcı fonksiyon
+  function normalize(str) {
+    return str.toLowerCase()
+      .replace(/ç/g, "c")
+      .replace(/ğ/g, "g")
+      .replace(/ı/g, "i")
+      .replace(/ö/g, "o")
+      .replace(/ş/g, "s")
+      .replace(/ü/g, "u")
+      .replace(/\s+/g, ""); // boşlukları da kaldır
+  }
+
+  // Her ID'yi ait olduğu sayfa ile eşleştir
+  const locationMap = {
+    "manavgatselalesi": "Doga.html",
+    "tazikanyonu": "Doga.html",
+    "adamkayalar": "Doga.html",
+    "manavgatirmagi": "Sehir.html",
+    "tilkilermagarasi": "Doga.html",
+    "titreyengol": "Doga.html",
+    "altinbesikmagarasi": "Doga.html",
+    "oymapinarbaraji": "Doga.html",
+    "gizlicennet": "Doga.html",
+    "koprulukanyon": "Doga.html",
+    "ahmetlerkanyonu": "Doga.html",
+    "Sideantikkenti": "Tarihi.html",
+    "Apollontapinagi": "Tarihi.html",
+    "sidemüzesi": "Tarihi.html",
+    "olukkopru": "Tarihi.html",
+    "etennaantikkenti": "Tarihi.html",
+    "selgeantikkenti": "Tarihi.html",
+    "lyrbeantikkenti": "Tarihi.html",
+    "yorukmuzesi": "Tarihi.html",
+    "kentmuzesi": "Tarihi.html",
+    "novamall": "Sehir.html",
+    "merkezkulliyecamii": "Sehir.html",
+    "yapayselale": "Sehir.html",
+    "tersvilla": "Sehir.html",
+    "mesirealani": "Sehir.html",
+    "bogazpiknikalani": "Sehir.html",
+    "sidesualtimuzesi": "Sehir.html",
+    "discoverypark": "Sehir.html",
+    "merkezcadde": "Sehir.html",
+    "maceraparki": "Sehir.html"
+  };
+
+  // Arama fonksiyonu
+  function search() {
+    const input = document.getElementById("searchInput");
+    const query = normalize(input.value.trim());
+
+    if (query in locationMap) {
+      const page = locationMap[query];
+      window.location.href = `${page}#${query}`;
+    } else {
+      alert("Aradığınız yer bulunamadı.");
+    }
+  }
+  </script>
+
+</body>
+</html>

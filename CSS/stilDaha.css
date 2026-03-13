@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(192, 186, 157), rgb(14, 53, 65));
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgb(232, 238, 238),rgba(192, 186, 157, 0.708));
+  padding: 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-name {
+  font-size: 2em;
+  font-family: Bahnschrift SemiBold;
+  margin-left: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.top-center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px 70px 10px 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.search-container button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  border: none;
+  background-color:  rgb(23, 106, 101);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#error {
+  color: red;
+  margin-top: 15px;
+}
+
+
+
+
+
+.buyuk-yazi {
+  font-size: 1.3em;
+}
+
+.genel.buyuk-yazi h3,
+.genel.buyuk-yazi p {
+  font-size: 1.2em !important;
+}
+
+
+
+
+
+
+
+h3 {
+  margin: 5px 0;
+}
+
+.genel {
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  padding: 50px;
+  margin: 50px 120px 50px 120px;
+}
+.cont {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.üst, .alt {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  padding: 20px;
+  color: whitesmoke;
+}
+.üst {
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+.alt {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+}
+.alt h3 {
+  text-align: center;
+}
+.iç {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.foto {
+  flex: 1.5;
+  position: relative;
+}
+.foto img {
+  border-radius: 4%;
+  width: 100%;
+  height: auto;
+}
+.bilgi {
+  flex: 1.5;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.user h4 {
+  margin-bottom: 20px;
+}
+
+.reactions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+.reaction {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  user-select: none;
+}
+
+.reaction:hover {
+  transform: scale(1.1);
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+.count {
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.slider-container {
+    position: relative;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+}
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.dot:hover {
+    background-color: #717171;
+}
+.dot.active {
+    background-color: #717171;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 40px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: white;
+}
+footer strong {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  nav a {
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+
+  .genel {
+    width: 90%;
+    margin-left: 30px;
+  }
+  .iç {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .bilgi {
+    margin: 10px 10px 0 10px;
+  }
+
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-center{
+    text-align: center;
+  }
+}

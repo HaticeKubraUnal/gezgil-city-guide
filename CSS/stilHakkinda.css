@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(Görsel/pin4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    font-family: Arial Black;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .header-left, .header-center, .header-right {
+    flex: 1;
+    text-align: center;
+  }
+
+  .header-left {
+    text-align: left;
+  }
+
+  .header-right {
+    font-size: 17px;
+    text-align: right;
+    font-family: 'Segoe UI', sans-serif;
+    padding-right: 10px;
+  }
+
+  .header-right a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 15px;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-bottom: 20px;
+  }
+
+  .üst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .foto img {
+    border-radius: 100%;
+    border: 6px solid rgb(52, 52, 52);
+  }
+  
+  .isim {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15%;
+    padding: 8px 20px 8px 20px;
+  }
+
+  .isim p {
+    text-align: center;
+    color: black;
+  }
+  
+  .alt p, h3 {
+    text-align: center;
+  }
+
+  .alt h3 {
+    color: whitesmoke;
+  }
+
+  .alt {
+    margin-bottom: 50px;
+    color:whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    padding: 50px 20px 50px 20px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 40px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  footer strong {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .header-left, .header-center, .header-right {
+      flex: unset;
+      width: 100%;
+      text-align: center;
+      margin: 0px 0;
+    }
+  
+    .header-left {
+      order: 2;
+    }
+  
+    .header-center {
+      order: 1;
+    }
+  
+    .header-right {
+      order: 3;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 10px;
+    }
+
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+
+    .üst {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .foto img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .alt {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 60px;
+    }
+    
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .footer-center{
+      text-align: center;
+    }
+  }

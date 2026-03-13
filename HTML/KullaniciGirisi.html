@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kullanıcı Girişi - GEZGİL</title>
+  <link rel="stylesheet" href="../CSS/stilKullaniciGirisi.css" />
+</head>
+<body>
+  <div class="auth-section" id="authSection">
+  <div id="message" class="message" style="display:none;"></div>
+
+  <input type="text" id="username" placeholder="Kullanıcı adı" />
+  <input type="email" id="email" placeholder="E-posta (Kayıt için)" />
+  <input type="password" id="password" placeholder="Şifre" />
+  <button onclick="registerUser()">Kayıt Ol</button>
+  <button onclick="loginUser()">Giriş Yap</button>
+</div>
+
+
+  <script>
+    function showMessage(text, type) {
+      const msgEl = document.getElementById('message');
+      msgEl.textContent = text;
+      msgEl.className = 'message ' + type; // 'message success' veya 'message error'
+      msgEl.style.display = 'block';
+    }
+
+    function registerUser() {
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (!username || !email || !password) {
+        showMessage('Lütfen tüm alanları doldurun.', 'error');
+        return;
+      }
+
+      if (localStorage.getItem(username)) {
+        showMessage('Bu kullanıcı adı zaten alınmış.', 'error');
+        return;
+      }
+
+      localStorage.setItem(username, JSON.stringify({ email, password }));
+      showMessage('Kayıt başarılı. Giriş yapabilirsiniz.', 'success');
+    }
+
+    function loginUser() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const userData = localStorage.getItem(username);
+
+      if (!userData) {
+        showMessage('Bu kullanıcı adı bulunamadı.', 'error');
+        return;
+      }
+
+      const { password: storedPassword } = JSON.parse(userData);
+
+      if (storedPassword !== password) {
+        showMessage('Geçersiz şifre.', 'error');
+        return;
+      }
+
+      showMessage('Giriş başarılı...', 'success');
+      setTimeout(() => {
+        localStorage.setItem('currentUser', username);
+        window.location.href = 'paylasim.html'; // Giriş sonrası paylaşım sayfasına yönlendir
+      }, 1000); // 1 saniye bekle
+    }
+
+  </script>
+</body>
+</html>

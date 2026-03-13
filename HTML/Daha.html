@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEZGİL-Tüm Gezi Alanları</title>
+    <link rel="stylesheet" href="../CSS/stilDaha.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">
+                <img src="Görsel/logo.png" width="110px" height="110px">
+            </div>
+            <div class="site-name">GEZGİL</div>
+        </div>
+
+        <div class="top-center-container">
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Örn: Manavgat Şelalesi..." />
+            <button onclick="searchTitle()">Ara</button>
+            </div>
+            
+        </div>
+        <div id="error"></div>
+        
+        <div>
+            <button id="fontToggleBtn" style="margin-right: 10px; margin-bottom:10px; padding: 8px 12px; font-size: 16px; background-color: transparent;">Yazıları Büyüt</button>
+        </div>
+
+        <nav>
+            <a href="Gezgil.html">Anasayfa</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="Hakkinda.html">Hakkında</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="genel">
+
+            <div class="cont" id="şelale">
+                <div class="üst" id="content">
+                    <h3>Manavgat Şelalesi</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-1">
+                                <img src="DogaGörsel/Şelale.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/şelale3.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/şelale4.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-1">
+                                <span class="dot" onclick="showSlide(1, 1)"></span>
+                                <span class="dot" onclick="showSlide(2, 1)"></span>
+                                <span class="dot" onclick="showSlide(3, 1)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Antalya’nın Manavgat ilçesinde, Toros Dağları’ndan doğan serin suların Akdeniz’e doğru yol alırken 
+                            oluşturduğu muhteşem bir doğa harikasıdır Manavgat Şelalesi. Yaklaşık 4-5 metrelik bir yükseklikten 
+                            dökülen suyun geniş bir alana yayılması, Manavgat Şelalesi’ni diğer birçok şelaleden ayıran 
+                            en önemli özelliktir. Gürül gürül akan suyun çıkardığı ses ve çevresindeki yeşil doğa, 
+                            ziyaretçilere adeta bir huzur melodisi sunar. Şelalenin etrafında yer alan çay bahçeleri, 
+                            yürüyüş yolları ve seyir terasları ise bu güzelliği izlemek için ideal noktalardır. 
+                            Manavgat Şelalesi sadece doğal güzelliğiyle değil, sunduğu aktivitelerle de öne çıkar. 
+                            Ziyaretçiler burada fotoğrafçılık, doğa yürüyüşleri ve piknik gibi aktivitelerle keyifli vakit 
+                            geçirebilirler. Doğayla iç içe, serinletici bir kaçamak arayan herkes için Manavgat Şelalesi, 
+                            mutlaka görülmesi gereken eşsiz bir doğa mirasıdır. Antalya'nın kavurucu sıcaklarında bir nebze 
+                            olsun ferahlamak isteyenlerin uğrak noktası olan bu şelale, her mevsim başka bir güzelliğe bürünür.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sarılar, istiklal caddesi no 35,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Manavgat Şelalesi Ziyaretçi Değerlendirme</h4><br>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="selale">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="tazi">
+                <div class="üst" id="content">
+                    <h3>Tazı Kanyonu</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-2">
+                                <img src="DogaGörsel/Tazı Kanyonu.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Tazı Kanyonu2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Tazı Kanyonu3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-2">
+                                <span class="dot" onclick="showSlide(1, 2)"></span>
+                                <span class="dot" onclick="showSlide(2, 2)"></span>
+                                <span class="dot" onclick="showSlide(3, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Antalya’nın Manavgat ilçesinde, Köprülü Kanyon Milli Parkı içinde yer alan Tazı Kanyonu, 
+                            son yıllarda doğal güzelliğiyle keşfedilmeyi bekleyen bir doğa harikası olarak öne çıkıyor. 
+                            Yaklaşık 200 ila 400 metre yüksekliğindeki sarp kayalıklarıyla ve eşsiz manzarasıyla adeta 
+                            gökyüzüne açılan bir pencere gibi. Yerel halk tarafından "Bilgelik Vadisi" olarak da anılan 
+                            bu kanyon, Köprüçay Nehri’nin derin vadisi üzerinde konumlanıyor. Doğa tutkunları, kampçılar, 
+                            fotoğrafçılar ve macera arayanlar için vazgeçilmez bir durak olan Tazı Kanyonu, özellikle 
+                            gün doğumu ve gün batımında büyüleyici bir atmosfer sunuyor. Bölgeye ulaşım son birkaç yılda 
+                            daha kolay hâle gelmiş olsa da hâlâ nispeten bakirliğini koruyor. Kanyonun uçurum kenarındaki 
+                            seyir noktaları, ziyaretçilere hem heyecan hem de huzur veren bir deneyim yaşatıyor.
+                            Tazı Kanyonu, sadece görselliğiyle değil, sunduğu içsel dinginlikle de ziyaretçilerine 
+                            doğayla bütünleşme fırsatı sunuyor. Manavgat’ın gizli kalmış bu doğa mucizesi, 
+                            her mevsim ayrı bir güzellik sunarak kendine hayran bırakıyor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Gaziler, Gaziler Köyü Yolu,<br>07550 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Tazı Kanyonu Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="tazi">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="adamkaya">
+                <div class="üst" id="content">
+                    <h3>Adamkayalar</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-3">
+                                <img src="DogaGörsel/Adamkayalar.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Adamkayalar2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Adamkayalar3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-3">
+                                <span class="dot" onclick="showSlide(1, 3)"></span>
+                                <span class="dot" onclick="showSlide(2, 3)"></span>
+                                <span class="dot" onclick="showSlide(3, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Toros Dağları'nın sarp kayalıklarında zamana meydan okurcasına yükselen ilginç bir doğal oluşum 
+                            yer alır: Adamkayalar. Adını, insan siluetlerini andıran kaya şekillerinden alan bu eşsiz oluşum, 
+                            doğanın sabırla şekillendirdiği görsel bir mucizedir. Rüzgâr, su ve zamanın iş birliğiyle 
+                            ortaya çıkan bu kayalar, insan figürlerini andıran ilginç biçimleriyle hem doğa meraklılarının 
+                            hem de fotoğrafçıların ilgisini çeker. İlk bakışta sanki antik bir medeniyetin kayalara işlediği 
+                            heykelleri andırsa da, bu şekiller tamamen doğal süreçlerle oluşmuştur. Adamkayalar bölgesi, 
+                            sessizliği, temiz havası ve çevresindeki doğal manzaralarıyla doğa yürüyüşü ve keşif gezileri 
+                            için oldukça ideal bir noktadır. Yolu biraz zorlu olsa da, doğayla baş başa kalmak ve eşsiz bir 
+                            manzaraya tanıklık etmek isteyenler için bu çaba kesinlikle karşılığını verir.Manavgat’taki bu 
+                            gizli güzellik, klasik turistik rotaların dışında kalması sayesinde bakirliğini korumaktadır. 
+                            Buraya adım attığınızda, sadece kayalara değil, doğanın sabrına ve sanatına da hayran kalırsınız.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Ballıbucak, 07550 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Adamkayalar Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="adamkaya">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="ırmak">
+                <div class="üst" id="content">
+                    <h3>Manavgat Irmağı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-4">
+                                <img src="DogaGörsel/Nehir.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/ırmak.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/nehir2.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-4">
+                                <span class="dot" onclick="showSlide(1, 4)"></span>
+                                <span class="dot" onclick="showSlide(2, 4)"></span>
+                                <span class="dot" onclick="showSlide(3, 4)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Antalya’nın Manavgat ilçesinden doğup Akdeniz’e dökülen Manavgat Irmağı, bölgenin 
+                            hem doğal güzelliği hem de yaşam kaynağı olarak öne çıkan en önemli su yollarından biridir. 
+                            Toros Dağları’ndan gelen kar sularıyla beslenen bu ırmak, yemyeşil doğası, serin suları ve 
+                            çevresindeki zengin ekosistemle tam anlamıyla bir doğa hazinesidir. Manavgat Irmağı, 
+                            sadece görselliğiyle değil, sunduğu aktivitelerle de binlerce yerli ve yabancı turisti 
+                            kendine çeker. Nehir boyunca yapılan tekne turları, rafting, balıkçılık, piknik ve 
+                            fotoğrafçılık gibi etkinlikler sayesinde ziyaretçiler suyla iç içe bir deneyim yaşar. 
+                            Irmağın çevresi, kuşlar ve su canlıları açısından da oldukça zengindir. Bu yönüyle 
+                            doğa severler ve ekoturizm meraklıları için ideal bir keşif rotasıdır. Gün batımında nehrin 
+                            üzerine vuran ışıkla oluşan manzara ise, adeta bir tabloyu andırır. Hem sakinlik arayanlar 
+                            hem de macera tutkunları için Manavgat Irmağı, doğayla buluşmanın en güzel adreslerinden biridir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Manavgat Merkez</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Manavgat Irmağı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="ırmak">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="tilkiler">
+                <div class="üst" id="content">
+                    <h3>Tilkiler Mağarası</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-5">
+                                <img src="DogaGörsel/Tilkiler.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Tilkiler2.jpg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-5">
+                                <span class="dot" onclick="showSlide(1, 5)"></span>
+                                <span class="dot" onclick="showSlide(2, 5)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Tilkiler Mağarası, bölgenin en dikkat çekici ve gizemli doğal oluşumlarından biridir. 
+                            Adını, çevresinde sıkça görülen tilkilerden aldığı söylenen bu mağara, hem doğa severler 
+                            hem de mağara araştırmacıları için etkileyici bir durak.Tilkiler Mağarası, kalker yapısına sahip 
+                            kayaların binlerce yıl süren çözünmesiyle oluşmuştur. İçerideki sarkıt ve dikitler, 
+                            doğanın sabırla şekillendirdiği heykelleri andırır. Mağaranın içi serin ve nemlidir; 
+                            yaz aylarında bile doğal bir klima etkisi sunar. Bu özelliğiyle ziyaretçilerine hem fiziksel 
+                            hem zihinsel bir serinlik sağlar.Mağara, yer yer daralan geçitleri, yüksek tavanlı salonları ve 
+                            doğal şekilleriyle adeta başka bir dünyaya açılan bir kapı gibidir. Keşif hissi uyandıran yapısı 
+                            sayesinde özellikle doğa yürüyüşçüleri, fotoğrafçılar ve macera arayanlar için eşsiz bir 
+                            keşif noktasıdır. Tilkiler Mağarası, çok bilinen turistik yerlerin dışında kalması nedeniyle 
+                            hâlâ bakirliğini koruyan, sakin ve huzurlu bir doğa köşesidir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sevinçköy, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Tilkiler Mağarası Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="tilkiler">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="titreyen">
+                <div class="üst" id="content">
+                    <h3>Titreyen Göl</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-6">
+                                <img src="DogaGörsel/Titreyengöl.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Titreyengöl2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Titreyengöl4.jpg" class="slide" id="slide-3">
+                                <img src="DogaGörsel/Titreyengöl3.jpg" class="slide" id="slide-4">
+                            </div>
+                            <div class="dots-container" id="dots-6">
+                                <span class="dot" onclick="showSlide(1, 6)"></span>
+                                <span class="dot" onclick="showSlide(2, 6)"></span>
+                                <span class="dot" onclick="showSlide(3, 6)"></span>
+                                <span class="dot" onclick="showSlide(4, 6)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Titreyen Göl, adını yüzeyinde sürekli olarak oluşan küçük dalgalanmalardan alır. Göl yüzeyinin 
+                            gün boyu “titriyormuş” gibi görünmesi, hem etkileyici bir doğal manzara yaratır hem de 
+                            ziyaretçilerine görsel bir şölen sunar. Bu eşsiz görünüm, rüzgârın göl yüzeyinde oluşturduğu 
+                            titreşimlerden kaynaklanır.Titreyen Göl, Manavgat Irmağı’nın doğuya uzanan kıyısında yer alır ve 
+                            çevresi sazlıklar, kuş yuvaları ve doğal yaşam alanlarıyla çevrilidir. Gölde ve çevresinde 
+                            yüzlerce kuş türü gözlemlenebilir. Özellikle flamingolar, balıkçıllar ve su kuşları, 
+                            bölgeyi adeta bir kuş cennetine çevirir. Bu yönüyle kuş gözlemciliği ve doğa fotoğrafçılığı 
+                            meraklıları için ideal bir noktadır. Titreyen Göl aynı zamanda yürüyüş yolları, oturma alanları ve 
+                            sakin atmosferiyle dinlenmek isteyenler için de bir kaçış noktasıdır. Yakın çevresinde bulunan 
+                            ormanlık alanlar, piknik ve hafif doğa yürüyüşleri için uygundur. Gölün doğayla iç içe huzurlu 
+                            yapısı, onu hem yerel halkın hem de turistlerin uğrak yerlerinden biri hâline getirir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sorgun,Titreyengöl, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Titreyen Göl Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="titreyen">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="altınbeşik">
+                <div class="üst" id="content">
+                    <h3>Altınbeşik Mağarası</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-7">
+                                <img src="DogaGörsel/Altınbeşik.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Altınbeşik2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Altınbeşik3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-7">
+                                <span class="dot" onclick="showSlide(1, 7)"></span>
+                                <span class="dot" onclick="showSlide(2, 7)"></span>
+                                <span class="dot" onclick="showSlide(3, 7)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Altınbeşik Mağarası, Türkiye’nin en büyük ve en etkileyici mağaralarından biridir. 
+                            Altınbeşik, adını mağara içindeki sarımsı altın rengindeki mineral tabakalardan alır ve 
+                            derinlikleriyle büyüleyici bir atmosfer sunar. Mağara, karstik oluşumlar ve zengin iç yapısıyla 
+                            yer altı dünyasının gizemli güzelliklerini gözler önüne serer. Mağara, 250 metreyi bulan uzunluğu 
+                            ve geniş odalarıyla dikkat çeker. İçindeki sarkıtlar, dikitler ve toprağa oturmuş taş bloklar, 
+                            binlerce yıl süren doğal süreçlerin eseridir. Ziyaretçiler, Altınbeşik Mağarası’na girdiklerinde, 
+                            serin iç mekanında doğal bir soğuk hava ile karşılaşır ve mağaranın etkileyici yapısını 
+                            daha yakından inceleme fırsatı bulurlar. Altınbeşik Mağarası, aynı zamanda yeraltı gölüne de 
+                            ev sahipliği yapar. Mağaranın derinliklerinde bulunan bu gölet, mağara içindeki mistik ortamı 
+                            pekiştirir. Ziyaretçilerin mağarayı keşfetmesi, adeta zamanın durduğu bir yolculuğa çıkmak gibidir.
+                            Manavgat’ın doğasında saklı kalan bu eşsiz mağara, aynı zamanda turizm açısından da önemli bir 
+                            cazibe merkezidir. Her yıl yerli ve yabancı turistlerin ilgisini çeker. Mağarayı ziyaret etmek, 
+                            hem tarihî hem de doğal güzellikleri keşfetmek isteyenler için kaçırılmaması gereken bir deneyimdir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Antalya, Ürünlü, 07680 İbradı/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Altınbeşik Mağarası Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="altinbesik">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="baraj">
+                <div class="üst" id="content">
+                    <h3>Oymapınar Barajı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-8">
+                                <img src="DogaGörsel/Oymapınar.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/oymapinar2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/oymapınar3.jpg" class="slide" id="slide-3">
+                                <img src="DogaGörsel/oymapinar4.jpg" class="slide" id="slide-4">
+                            </div>
+                            <div class="dots-container" id="dots-8">
+                                <span class="dot" onclick="showSlide(1, 8)"></span>
+                                <span class="dot" onclick="showSlide(2, 8)"></span>
+                                <span class="dot" onclick="showSlide(3, 8)"></span>
+                                <span class="dot" onclick="showSlide(4, 8)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Oymapınar Barajı, bölgenin en etkileyici yapılarından biridir. 1980'li yıllarda inşa edilen 
+                            bu baraj, Manavgat Irmağı üzerinde kurulmuş olup, bölgenin su kaynaklarını düzenlemek ve 
+                            enerji üretimini sağlamak amacıyla yapılmıştır. Ancak Oymapınar Barajı, sadece mühendislik 
+                            harikası olmakla kalmaz, aynı zamanda çevresindeki doğal güzelliklerle de dikkat çeker.
+                            Baraj göleti, çevresindeki yemyeşil ormanlarla birleşerek doğaseverlere adeta bir cennet sunar. 
+                            Göletin mavi suları, yüksek dağlarla çevrilidir ve bu manzara, ziyaretçilerini büyüleyen 
+                            bir atmosfer yaratır. Özellikle göl kenarında yapılacak yürüyüşler ve tekne turları, 
+                            bölgeyi ziyaret edenler için keyifli bir deneyim sunar. Oymapınar Barajı, aynı zamanda 
+                            ekosistem açısından da önemli bir bölgedir. Gölette pek çok su kuşu türü yaşar, bu yüzden bölge 
+                            kuş gözlemciliği yapmak için ideal bir yerdir. Ayrıca, baraj çevresinde yapılan balıkçılık ve 
+                            piknik aktiviteleri de oldukça popülerdir. Doğayla iç içe, huzurlu bir ortamda zaman geçirmek 
+                            isteyenler için Oymapınar Barajı, hem doğal hem de yapısal güzelliklerin birleştiği 
+                            nadir noktalardan biridir. Hem sakinlik arayanlar hem de macera arayanlar için 
+                            burada keşfedilecek çok şey vardır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Oymapınar, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Oymapınar Barajı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="baraj">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="gizcennet">
+                <div class="üst" id="content">
+                    <h3>Gizli Cennet</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-9">
+                                <img src="DogaGörsel/Gizli cennet.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Gizli cennet3.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Gizli cennet2.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-9">
+                                <span class="dot" onclick="showSlide(1, 9)"></span>
+                                <span class="dot" onclick="showSlide(2, 9)"></span>
+                                <span class="dot" onclick="showSlide(3, 9)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Gizli Cennet, doğaseverlerin ve keşif meraklılarının uğrak noktalarından biridir. 
+                            Bu saklı cennet, doğal güzellikleriyle adeta bir huzur adasıdır ve gizli kalmış bir cennet gibi 
+                            kendini keşfetmek isteyenler için tam bir doğa harikasıdır. Yemyeşil ormanlarla çevrili, 
+                            doğal şelalelerle süslü, berrak sularla donanmış bir bölgeyi kapsar. Ziyaretçilerine muazzam bir 
+                            manzara sunan bu alan, doğal yürüyüş parkurları ve sakin atmosferiyle bilinir. Zengin bitki örtüsü 
+                            ve etraftaki kuş sesleriyle sizi adeta başka bir dünyaya götürür. Ziyaretçilere, doğa ile 
+                            baş başa kalma fırsatı sunan Gizli Cennet, bölgenin diğer turistik alanlarından uzakta, 
+                            sakinliği ve doğallığıyla dikkat çeker. Burası, kampçılık, doğa yürüyüşleri ve fotoğrafçılık gibi 
+                            doğa aktiviteleriyle ilgilenenlerin ilgisini çekerken, aynı zamanda dinlenme ve 
+                            zihinsel huzur arayanlar için de mükemmel bir yerdir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Kalemler, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Gizli Cennet Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="gizlicennet">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="köprülü">
+                <div class="üst" id="content">
+                    <h3>Köprülü Kanyon</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-10">
+                                <img src="DogaGörsel/Köprülü Kanyon.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/Köprülü Kanyon2.jpg" class="slide" id="slide-2">
+                                <img src="DogaGörsel/Köprülü Kanyon3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-10">
+                                <span class="dot" onclick="showSlide(1, 10)"></span>
+                                <span class="dot" onclick="showSlide(2, 10)"></span>
+                                <span class="dot" onclick="showSlide(3, 10)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Antalya'nın Manavgat ilçesinde yer alan Köprülü Kanyon Milli Parkı, Türkiye'nin en uzun ve 
+                            etkileyici kanyonlarından biridir. 14 kilometre uzunluğunda ve bazı noktaları 100 metreyi aşan 
+                            derinlikleriyle, bu kanyon, doğaseverler ve macera arayanlar için eşsiz bir destinasyon sunar. 
+                            Köprülü Kanyon, adını, kanyonun içinde yer alan ve Roma dönemine ait olan Oluk Köprü'den alır. 
+                            Bu tarihi köprü, kanyonun simgelerinden biri olup, bölgenin zengin tarihini yansıtır. 
+                            Kanyonun içinden geçen Köprüçay Nehri, yaz kış yüksek debisiyle rafting ve kano gibi 
+                            su sporlarına olanak tanır. Bu nedenle, bölge, su sporları tutkunları için popüler bir merkezdir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Beşkonak, 07550 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Köprülü Kanyon Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="koprulu">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="side">
+                <div class="üst" id="content">
+                    <h3>Side Antik Kenti</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-11">
+                                <img src="TarihiGörsel/side.jpg" class="slide" id="slide-1">
+                                <img src="CSS/Görsel/tarihi.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/side2.jpg" class="slide" id="slide-3">
+                                <img src="TarihiGörsel/side3.jpg" class="slide" id="slide-4">
+                            </div>
+                            <div class="dots-container" id="dots-11">
+                                <span class="dot" onclick="showSlide(1, 11)"></span>
+                                <span class="dot" onclick="showSlide(2, 11)"></span>
+                                <span class="dot" onclick="showSlide(3, 11)"></span>
+                                <span class="dot" onclick="showSlide(4, 11)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Side Antik Kenti, Akdeniz'in en önemli ve en iyi korunmuş antik şehirlerinden biridir. 
+                            M.Ö. 7. yüzyılda kurulan bu tarihi şehir, antik Yunan, Roma ve Bizans medeniyetlerinin 
+                            izlerini taşır. Side, hem tarihî zenginlikleri hem de doğa ile iç içe oluşuyla ziyaretçilerini 
+                            büyüler. Side Antik Kenti, surlarla çevrilmiş tarihi bir alan olup, antik tiyatro, 
+                            Apollo Tapınağı, Antik Liman ve Agora gibi önemli yapıları barındırır. Şehirdeki antik 
+                            tiyatro da çok iyi korunmuş ve 15.000 kişi kapasiteli bir yapıdır. Bu tiyatro, hem mimari hem de 
+                            akustik özellikleriyle dikkat çeker. Antik Liman ve çevresi, tarihte Side'nin önemli bir 
+                            denizcilik ve ticaret merkezi olduğunu gösterir. Agora, şehrin ticaret ve toplumsal hayatının 
+                            merkeziyken, Bathhouse ve Stadyum gibi yapılar da şehirdeki sosyal yaşamı gözler önüne serer. 
+                            Side Plajı'nda denizin keyfini çıkarırken, antik kalıntıları görmek de mümkün. Ayrıca, 
+                            şehirdeki birçok restoran, geleneksel Türk mutfağını deneyimleyebileceğiniz şık mekanlar sunar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Selimiye Mahallesi, Çağla Sk., 07330 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Side Antik Kenti Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="sideantikkent">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="apollon">
+                <div class="üst" id="content">
+                    <h3>Apollon Tapınağı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-12">
+                                <img src="TarihiGörsel/apollon.jpg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/apollon2.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/side3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-12">
+                                <span class="dot" onclick="showSlide(1, 12)"></span>
+                                <span class="dot" onclick="showSlide(2, 12)"></span>
+                                <span class="dot" onclick="showSlide(3, 12)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Side Antik Kenti içerisinde yer alan Apollon Tapınağı, bölgenin en bilinen ve en etkileyici 
+                            yapılarından biridir. Bu tapınak, M.Ö. 2. yüzyılda inşa edilmiştir ve Antik Yunan’ın 
+                            Apollon adlı güneş ve ışık tanrısına adanmıştır. Tapınak, hem tarihi hem de mimari açıdan 
+                            büyük bir öneme sahiptir. Apollon Tapınağı, İon tarzı sütunlarıyla ünlüdür. Tapınağın 
+                            dış cephesi, 6 sütunlu ön cephesiyle dikkat çeker ve bu sütunlar zamanla büyük ölçüde 
+                            tahrip olsa da hala etkileyici bir manzara sunmaktadır. Tapınağın orijinal yapısı, muazzam 
+                            büyüklüğü ve ihtişamı ile o dönemin en büyük tapınaklarından biri olarak kabul edilmiştir.
+                            Apollon Tapınağı'nın bulunduğu alan, Akdeniz’in eşsiz manzarasına hakimdir. Side'nin antik 
+                            limanına ve çevresindeki doğaya bakan bu tapınak, hem dini hem de sosyal bir merkez olmuştur. 
+                            Tapınakta yapılan dini törenler ve etkinlikler, bölgenin kültürel yaşamına büyük katkı sağlamıştır.
+                            Apollon Tapınağı, Side Antik Kenti'nin en çok fotoğraflanan yapılarından biridir. Ziyaretçiler, 
+                            tapınak önünde büyüleyici manzara eşliğinde fotoğraflar çekerken, tarihî atmosferi de 
+                            derinlemesine hissederler. Özellikle gün batımında tapınağın sütunları, muazzam bir görsel şölen sunar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Side, Cumhuriyet Blv. No:50, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Apollon Tapınağı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="apollon">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="sidemüze">
+                <div class="üst" id="content">
+                    <h3>Side Müzesi</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-13">
+                                <img src="TarihiGörsel/sidemüzesi.png" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/sidemüzesi3.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/sidemüzesi2.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-13">
+                                <span class="dot" onclick="showSlide(1, 13)"></span>
+                                <span class="dot" onclick="showSlide(2, 13)"></span>
+                                <span class="dot" onclick="showSlide(3, 13)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Side Müzesi, Antalya'nın Manavgat ilçesindeki Side Antik Kenti'nde, M.S. 2. yüzyılda inşa edilen 
+                            bir Roma hamamı binasında yer almaktadır. Müze, Geç Bronz Çağı, Helenistik, Roma ve Bizans 
+                            dönemlerine ait zengin bir koleksiyona sahiptir. Sergilenen eserler arasında heykeller, 
+                            lahitler, yazıtlar, kabartmalar, büstler, takılar, mimari parçalar, pişmiş toprak, cam ve 
+                            bronz buluntular ile sikkeler bulunmaktadır. Müze binası, Roma hamamının farklı bölümleri olarak 
+                            kullanılan alanlarda düzenlenmiştir. Örneğin, soğukluk (Frigidarium), ılıklık (Tepidarium), 
+                            sıcaklık (Caldarium) ve terleme odası (Sudatorium) gibi bölümler, günümüzde sergileme salonları 
+                            olarak kullanılmaktadır. Öne Çıkan Eserler; <br><br>● Üç Güzeller Heykeli: Hera, Aphrodite ve Athena'yı 
+                            simgeleyen bu heykel, zarafeti ve bereketi simgeler. <br>● Poseidon Frizi: Hamamın avlusunda yer alan 
+                            bu friz, denizler tanrısı Poseidon'un mitolojik öykülerini tasvir eder. <br>● Roma Güneş Saati: 
+                            Müze bahçesinde yer alan bu güneş saati, antik dönemde zamanı ölçme yöntemlerini gösterir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Side, Liman Cd., 07330 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Side Müzesi Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="sidemuze">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="oluk">
+                <div class="üst" id="content">
+                    <h3>Oluk Köprü</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-14">
+                                <img src="TarihiGörsel/oluk.jpg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/oluk2.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/oluk3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-14">
+                                <span class="dot" onclick="showSlide(1, 14)"></span>
+                                <span class="dot" onclick="showSlide(2, 14)"></span>
+                                <span class="dot" onclick="showSlide(3, 14)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Oluk Köprü, Köprülü Kanyon Milli Parkı sınırlarında yer alan tarihi bir yapıdır. 
+                            Roma İmparatorluğu dönemine ait olan bu köprü, M.Ö. 2. yüzyılda inşa edilmiştir ve günümüze kadar 
+                            iyi bir şekilde korunarak gelmiştir. Oluk Köprü, Roma dönemi mühendisliğinin mükemmel bir 
+                            örneğidir ve antik mühendislik bilgisiyle inşa edilmiştir. Yapı, uzunluğu yaklaşık 22 metre, 
+                            genişliği ise 7 metre civarındadır. İon tarzı sütunlar ve kemerler ile donatılmış olan köprü, 
+                            hem mimari açıdan hem de tarihi anlamda büyük bir öneme sahiptir. Oluk Köprü'nün bir diğer önemli 
+                            özelliği de, antik dönemdeki su yolu ağlarının bir parçası olmasıdır. Su, su kemerleri 
+                            aracılığıyla bu köprüye yönlendirilir ve köprü sayesinde dağlardan gelen suların tarıma uygun 
+                            alanlara iletilmesi sağlanır. Bu, bölgenin tarım hayatı için çok önemli bir rol oynamıştır. 
+                            Bugün, Oluk Köprü, hem tarihseverler hem de doğa tutkunları tarafından sıkça ziyaret edilmektedir. 
+                            Köprü, Köprülü Kanyon'un eşsiz doğal güzellikleriyle birleşerek, bölgeye gelen turistlere 
+                            tarih ve doğa iç içe bir deneyim sunar. Ayrıca, köprünün çevresi, doğa yürüyüşleri ve 
+                            fotoğrafçılık gibi açık hava aktiviteleri için de popüler bir alan haline gelmiştir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Karabük, ismi bilinmeyen yol, 07550 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Oluk Köprü Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="olukkopru">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="etenna">
+                <div class="üst" id="content">
+                    <h3>Etenna Antik Kenti</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-15">
+                                <img src="TarihiGörsel/etenna.jpg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/etenna3.jpeg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-15">
+                                <span class="dot" onclick="showSlide(1, 15)"></span>
+                                <span class="dot" onclick="showSlide(2, 15)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Etenna Antik Kenti, Akdeniz'in iç kesimlerinde, Alanya ile Manavgat arasındaki dağlık alanda 
+                            yer alan bir antik yerleşimdir. Etenna, tarihsel olarak, Lykia ve Pamfilya bölgesinin 
+                            sınırlarına yakın bir konumda olup, antik kaynaklarda adı sıkça geçmektedir. Bu yerleşim, 
+                            MÖ 3. yüzyıl ile M.S. 5. yüzyıl arasındaki dönemde önemli bir yerleşim merkezi olmuştur.
+                            Etenna, Lykia'nın batısındaki en önemli şehirlerden biri olarak bilinir. Şehirdeki kalıntılar, 
+                            özellikle Roma dönemi mimarisine ait örneklerle dikkat çeker. Etenna Antik Kenti’nin en önemli
+                            yapılarından biri, şehri yüksek bir tepeye yerleştiren kale duvarlarıdır. Bu duvarlar, bölgenin
+                            tarihî savunmasını simgelerken, aynı zamanda şehri dışarıdan gelen saldırılara karşı korumayı
+                            amaçlamıştır. Etenna'nın dikkat çeken bir diğer özelliği de, antik tiyatrosudur. Bu tiyatro, 
+                            şehrin sosyal hayatına dair önemli izler sunar. 1000-1500 kişilik kapasiteye sahip olan tiyatro, 
+                            döneminde büyük etkinliklerin yapıldığı bir alan olarak kullanılmıştır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sırtköy, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Etenna Antik Kenti Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="etenna">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="selge">
+                <div class="üst" id="content">
+                    <h3>Selge Antik Kenti</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-16">
+                                <img src="TarihiGörsel/selge.jpg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/Selge3.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/Selge2.jpg" class="slide" id="slide-3">
+                                <img src="TarihiGörsel/Selge4.jpg" class="slide" id="slide-4">
+                            </div>
+                            <div class="dots-container" id="dots-16">
+                                <span class="dot" onclick="showSlide(1, 16)"></span>
+                                <span class="dot" onclick="showSlide(2, 16)"></span>
+                                <span class="dot" onclick="showSlide(3, 16)"></span>
+                                <span class="dot" onclick="showSlide(4, 16)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                                Selge Antik Kenti, özellikle Roma dönemi kalıntıları ve harabeleriyle dikkat çeker. 
+                                MÖ 4. yüzyılda kurulan Selge, antik çağlarda Pisidia bölgesinin önemli şehirlerinden biriydi 
+                                ve Roma İmparatorluğu döneminde büyük bir gelişim göstermiştir. Selge, dağlık bir alanda 
+                                yer aldığı için coğrafi konum olarak oldukça stratejik bir noktada bulunur. Bu yüksek konum, 
+                                kenti hem savunma açısından avantajlı hale getirmiş hem de buradan doğanın muazzam 
+                                güzelliklerinin keyfini çıkarma fırsatı sunmuştur. Selge Antik Kenti’nde en çok dikkat çeken 
+                                yapılar arasında antik tiyatro ve şehir surları yer alır. Selge Antik Tiyatrosu, yaklaşık 
+                                5.000 kişilik kapasiteye sahip olup, döneminin büyük etkinliklerine ev sahipliği yapmış bir 
+                                yapıdır. Ayrıca, kentteki antik hamamlar, sarnıçlar ve agora gibi yapılar da şehirdeki 
+                                günlük yaşam hakkında önemli bilgiler sunar. Kentin surlarında yer alan taş işçiliği ise 
+                                oldukça etkileyicidir. Bugün, Selge Antik Kenti, hem tarih hem de doğa ve tarih tutkunları
+                                için büyük bir ilgi odağıdır. Doğal güzelliklerle iç içe geçmiş bu antik kent, 
+                                aynı zamanda bölgedeki birçok dağ yürüyüşü rotasına da yakın konumda bulunur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Altınkaya, 07550 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Selge Antik Kenti Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="selge">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="lybre">
+                <div class="üst" id="content">
+                    <h3>Seleukeia - Lyrbe Antik Kenti</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-17">
+                                <img src="TarihiGörsel/lybre.png" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/seleukeia2.jpeg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/seleukeia3.jpeg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-17">
+                                <span class="dot" onclick="showSlide(1, 17)"></span>
+                                <span class="dot" onclick="showSlide(2, 17)"></span>
+                                <span class="dot" onclick="showSlide(3, 17)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Seleukeia - Lyrbe Antik Kenti, tarihi ve arkeolojik olarak büyük öneme sahip bir antik yerleşimdir. 
+                            Seleukeia, MÖ 3. yüzyılda kurulmuş olup, Seleukoslar dönemine, özellikle de Büyük İskender'in 
+                            ardından kurulan Hellenistik krallıklara dayanır. Şehir, Lyrbe adıyla da bilinir ve Lykia 
+                            bölgesinin önemli bir kentiydi. Seleukeia - Lyrbe Antik Kenti, yüksek bir tepeye yerleştirilmiş 
+                            olup, özellikle doğal güzellikleriyle dikkat çeker. Bu kentin tarihî mirası, etkileyici 
+                            Roma dönemi yapıları, Helenistik ve Bizans dönemi kalıntılarıyla harmanlanmıştır. Kentin hemen 
+                            her köşesinde tarihi izler bulunur. Şehirdeki tapınaklar, hamamlar ve sarnıçlar gibi yapılar da 
+                            şehir yaşamını tanımak açısından önemlidir. Şehir, ayrıca savunma amaçlı olarak inşa edilen 
+                            kale duvarlarıyla dikkat çeker. Seleukeia - Lyrbe, dağlık alanda yer alması nedeniyle doğal 
+                            çevresiyle de ünlüdür. Şehirdeki kazılar sonucunda, tarıma dayalı bir yerleşim olduğu, 
+                            antik dönemde burada yaşayanların tarım ve hayvancılık faaliyetleriyle geçimlerini sağladığı 
+                            anlaşılmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Bucakşeyhler, Manavgat Cd.,<br>07330 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Seleukeia - Lyrbe Antik Kenti Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="seleukeia">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="yörük">
+                <div class="üst" id="content">
+                    <h3>Yörük Müzesi</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-18">
+                                <img src="TarihiGörsel/yörük.jpeg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/yörük2.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/yörük3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-18">
+                                <span class="dot" onclick="showSlide(1, 18)"></span>
+                                <span class="dot" onclick="showSlide(2, 18)"></span>
+                                <span class="dot" onclick="showSlide(3, 18)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Yörük kültürünü tanıtmayı amaçlayan bir müzedir. Müze, yaklaşık 4.000 m²'lik bir alanda 
+                            inşa edilmiştir ve 464 m²'lik kapalı sergi alanına sahiptir. Müze, 1.000'e yakın etnografik 
+                            nitelikteki eser ile Yörüklerin geleneksel yaşamını ziyaretçilere sunmaktadır . Müze, Yörüklerin 
+                            Mekanları, Yörüklerde Sosyal Hayat, Dokumacılık ve El Sanatları, Hayvancılık, Tarım, 
+                            Mutfak Kültürü gibi temalarla Yörük yaşamını kapsamlı bir şekilde sergilemektedir. 
+                            Ayrıca, Yörük çadırları, yağlı güreş canlandırmaları ve heykellerle desteklenmiş sahneler ile 
+                            ziyaretçilere interaktif bir deneyim sunulmaktadır .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Evren Mahallesi, Küme Evleri No:8,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Yörük Müzesi Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="yoruk">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="kent">
+                <div class="üst" id="content">
+                    <h3>Kent Müzesi</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-19">
+                                <img src="TarihiGörsel/kent.jpg" class="slide" id="slide-1">
+                                <img src="TarihiGörsel/kent3.jpg" class="slide" id="slide-2">
+                                <img src="TarihiGörsel/kent2.jpeg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-19">
+                                <span class="dot" onclick="showSlide(1, 19)"></span>
+                                <span class="dot" onclick="showSlide(2, 19)"></span>
+                                <span class="dot" onclick="showSlide(3, 19)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            1200 m²’lik bir alanda kurulu olan bu modern müze, 6 ana sergi salonu ve 14 farklı bölüm ile 
+                            Manavgat’ın tarihî, kültürel ve doğal mirasını zengin görseller ve objeler eşliğinde tanıtır.
+                            Müzenin içeriği, ziyaretçilerin hem görsel hem de deneyimsel olarak şehirle bağ kurmasını 
+                            sağlayacak şekilde tasarlanmıştır. Yörük Kültürü bölümünde geleneksel Yörük çadırı, giysiler, 
+                            günlük yaşam eşyaları ve el dokuması halılar yer alır. Girit Kültürü bölümü ise Manavgat’a 
+                            yerleşmiş Giritli Türklerin kültürel mirasını yansıtır. Tarım ve zanaat bölümlerinde geçmişte 
+                            kullanılan tarım aletleri, ahşap işçiliği, demircilik ve dokuma tezgâhları sergilenmektedir. 
+                            Yemek Kültürü alanında ise geleneksel Manavgat mutfağına ait araç-gereçler ve yöresel yemek 
+                            sunumları yer alır. Müze aynı zamanda doğaya özel bir bölüm ayırmıştır. Bu alanda 
+                            Manavgat Irmağı, Toroslar ve çevre florası/faunası hakkında bilgi panoları ve canlandırmalar 
+                            bulunur. Ayrıca Toros Kadınları’nın el emeği ürünleri, kent tarihini anlatan görsel arşivler, 
+                            projeksiyon salonları, kütüphane ve dinlenme alanı olarak bir kent kafesi de müzenin önemli 
+                            kısımları arasındadır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Aşağı Mahallesi, Aşağı Hisar, 4517. Sk.<br>NO:3-1, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Kent Müzesi Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="kent">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="avm">
+                <div class="üst" id="content">
+                    <h3>Novamall</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-20">
+                                <img src="SehirGörsel/avm.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/novamall2.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/novamall3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-20">
+                                <span class="dot" onclick="showSlide(1, 20)"></span>
+                                <span class="dot" onclick="showSlide(2, 20)"></span>
+                                <span class="dot" onclick="showSlide(3, 20)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Bölgenin en büyük ve en modern alışveriş merkezlerinden biridir. Hem yerel halkın hem de
+                            turistik ziyaretçilerin sıklıkla tercih ettiği bu AVM, alışverişin ötesinde, sosyal yaşamın da
+                            merkezi konumundadır. İçerisinde moda, teknoloji, kozmetik, ev yaşam ürünleri gibi pek çok 
+                            kategoride mağazayı barındırır. Hem yerli hem de uluslararası birçok marka burada ziyaretçilere
+                            sunulmaktadır. Alışverişin yanı sıra yeme-içme alanları, fast food zincirlerinden kafe ve
+                            restoranlara kadar geniş bir yelpazeye sahiptir. Çocuklu aileler için Novamall oldukça cazip
+                            bir yerdir. AVM içerisinde çocuk oyun alanları, lunapark tarzı eğlence merkezleri ve çeşitli
+                            çocuk etkinlikleri düzenlenmektedir. Ayrıca sinema salonu da ziyaretçilere güncel filmleri
+                            izleme imkânı sunar. Novamall, yıl boyunca farklı yaş gruplarına hitap eden etkinlikler
+                            düzenlemektedir. Bunlar arasında: Çocuk atölyeleri. canlı müzik performansları ve yöresel pazarlar
+                            gibi sosyal ve kültürel etkinlikler yer alır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Alanya, Antalya yolu, Sorgun, 8096. Sk No:5,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Novamall Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="avm">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="cami">
+                <div class="üst" id="content">
+                    <h3>Merkez Külliye Camii</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-21">
+                                <img src="SehirGörsel/cami.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/cami2.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/cami3.jpg" class="slide" id="slide-3">
+                                <img src="SehirGörsel/cami6.jpg" class="slide" id="slide-4">
+                            </div>
+                            <div class="dots-container" id="dots-21">
+                                <span class="dot" onclick="showSlide(1, 21)"></span>
+                                <span class="dot" onclick="showSlide(2, 21)"></span>
+                                <span class="dot" onclick="showSlide(3, 21)"></span>
+                                <span class="dot" onclick="showSlide(4, 21)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            2004 yılında inşa edilen cami, Antalya bölgesinin en büyük camisi olup, aynı anda 4.000 kişinin 
+                            ibadet edebileceği kapasiteye sahiptir. Caminin mimarisi, geleneksel Osmanlı tarzının modern 
+                            bir yorumu olarak tasarlanmıştır. Ana kubbesi 30 metre yüksekliğinde olup, çevresinde 27 küçük 
+                            kubbe bulunmaktadır. Dört minaresi, her biri 60 metre yüksekliğinde ve üçer şerefeli olarak 
+                            inşa edilmiştir. Caminin adı olan "Külliye", sadece ibadet alanını değil, aynı zamanda sosyal 
+                            hizmetlerin sunulduğu bir kompleksi ifade eder. Bu kapsamda, cami bünyesinde bir medrese, aşevi, 
+                            fırın, hamam ve çeşitli hayır kurumları bulunmaktadır. Ayrıca, farklı dillerde 
+                            (İngilizce, Almanca, Fransızca, Rusça, İtalyanca) Kur'an-ı Kerim mealleri bulundurularak, 
+                            yabancı ziyaretçilere İslam dini hakkında bilgi sunulmaktadır. Cami, mimari estetiği ve sunduğu 
+                            hizmetlerle Manavgat'ın simgesel yapılarından biri haline gelmiştir. Ziyaretçilere huzurlu bir 
+                            ortam sunan cami, hem ibadet etmek isteyenler hem de kültürel bir deneyim arayanlar için 
+                            önemli bir duraktır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Aşağı Pazarcı, 1517. Sk.,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Merkez Külliye Camii Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="külliye">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="yapayşel">
+                <div class="üst" id="content">
+                    <h3>Yapay Şelale</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-22">
+                                <img src="SehirGörsel/yapay şelale.jpeg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/yapay şelale2.jpeg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-22">
+                                <span class="dot" onclick="showSlide(1, 22)"></span>
+                                <span class="dot" onclick="showSlide(2, 22)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Manavgat'ın merkezine yakın bir konumda bulunan Türkbeleni Yapay Şelalesi, şehrin peyzaj 
+                            zenginliğini artırmak ve halka doğayla iç içe bir alan sunmak amacıyla inşa edilmiştir. 
+                            Beş aşamalı olarak tasarlanan şelale, doğal taşlar ve bitki örtüsüyle çevrelenmiş olup, 
+                            suyun akışıyla oluşturduğu görsel ve işitsel huzur sayesinde ziyaretçilere keyifli anlar 
+                            yaşatmaktadır. Şelalenin bulunduğu Türkbeleni Kent Parkı, geniş yeşil alanları, 
+                            yürüyüş yolları ve oturma alanlarıyla hem spor yapmak isteyenlere hem de dinlenmek isteyenlere 
+                            hitap etmektedir. Özellikle yaz aylarında serinlemek ve doğayla baş başa kalmak isteyenler 
+                            için ideal bir mekân olan bu alan, fotoğraf tutkunları için de eşsiz kareler sunmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Yukarı Hisar, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Yapay Şelale Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="yapayşelale">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="ters">
+                <div class="üst" id="content">
+                    <h3>Ters Villa</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-23">
+                                <img src="SehirGörsel/tersVilla.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/tersVilla2.jpeg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-23">
+                                <span class="dot" onclick="showSlide(1, 23)"></span>
+                                <span class="dot" onclick="showSlide(2, 23)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Türkiye'nin en büyük ters evi olarak bilinen sıra dışı bir turistik mekandır. Ters Villa, 
+                            mimarisi ve iç dekorasyonuyla ziyaretçilerine alışılmışın dışında bir deneyim sunan, 
+                            yer çekimine meydan okuyan bir yapıdır. Dışarıdan bakıldığında çatısı yere, temeli ise 
+                            gökyüzüne bakan bu evin içine girildiğinde, tüm eşyaların tavana asılı olduğunu görmek mümkündür. 
+                            Mobilyalar, mutfak eşyaları, yataklar ve hatta banyo aksesuarları bile ters bir şekilde 
+                            yerleştirilmiştir. Ziyaretçiler, bu ters dünyada yürürken ilginç fotoğraflar çekebilir, 
+                            algılarını zorlayan bir ortamda eğlenceli vakit geçirebilirler. Ters Villa'nın içindeki 
+                            tüm eşyalar gerçek ve çalışır durumdadır, bu da deneyimi daha da etkileyici kılmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sorgun, 8090. Sk. No:8, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Ters Villa Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="ters">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="mesire">
+                <div class="üst" id="content">
+                    <h3>Sorgun Boğaz Mesire Alanı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-24">
+                                <img src="SehirGörsel/mesire.jpeg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/mesire2.jpeg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-24">
+                                <span class="dot" onclick="showSlide(1, 24)"></span>
+                                <span class="dot" onclick="showSlide(2, 24)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Sorgun Boğaz Mesire Alanı, denize ve ormana yakın konumuyla 
+                            doğa severlerin vazgeçilmez duraklarından biridir. Geniş çam ormanlarının içinde yer alan bu alan, 
+                            serin havası, kuş sesleriyle dolu atmosferi ve gölgelik alanlarıyla özellikle yaz aylarında 
+                            dinlenmek isteyenler için idealdir. Ailelerin piknik yapabileceği masalar, yürüyüş yolları ve 
+                            çocuklar için güvenli oyun alanları ile hem yerli halk hem de turistler tarafından sıkça tercih 
+                            edilir. Doğal zemin yapısını koruyan Sorgun Boğaz, sabah yürüyüşleri, bisiklet sürüşü, 
+                            fotoğrafçılık ve doğa gözlemi gibi aktiviteler için de elverişlidir. Sessizliği ve sakinliğiyle 
+                            şehir gürültüsünden uzaklaşmak isteyenlerin rahatlıkla zaman geçirebileceği bir doğa alanı sunar.
+                            Özellikle doğayla baş başa kalmak, temiz hava almak ve huzur bulmak isteyenler için Manavgat 
+                            çevresinde ideal konumlardan biridir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sorgun, Titreyengöl Cd. No:3,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Sorgun Boğaz Mesire Alanı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="mesire">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="boğaz">
+                <div class="üst" id="content">
+                    <h3>Boğaz Piknik Alanı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-25">
+                                <img src="SehirGörsel/sorgun.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/boğaz.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/boğaz2.jpeg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-25">
+                                <span class="dot" onclick="showSlide(1, 25)"></span>
+                                <span class="dot" onclick="showSlide(2, 25)"></span>
+                                <span class="dot" onclick="showSlide(3, 25)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Boğaz Piknik Alanı, Manavgat Irmağı ile Akdeniz'in birleşim noktasında yer alan eşsiz bir 
+                            doğa alanıdır. Bu bölge, deniz ve ırmağın ortasında kalan konumuyla, ziyaretçilere sakin ve 
+                            huzurlu bir atmosfer sunar. Özellikle yaz aylarında serinlemek isteyenler için hem denizin 
+                            hem de ırmağın sunduğu doğal güzellikler harika bir fırsattır.b Bu piknik alanı, gölgeli ağaçlar
+                            ve geniş çimenlik alanları ile dinlenmek ve doğayla iç içe vakit geçirmek isteyenler için
+                            ideal bir noktadır. Sorgun Boğaz Piknik Alanı, sadece piknik yapmak için değil, aynı zamanda
+                            yürüyüş yapmak, deniz ve ırmakta yüzmek, fotoğraf çekmek ve doğa gözlemi yapmak isteyenler için de 
+                            harika bir yerdir. Çevredeki flora ve fauna, doğal yaşamı gözlemlemek isteyen doğaseverler için 
+                            oldukça zengin bir çeşitlilik sunmaktadır. Hem doğayla iç içe olmanın hem de su aktivitelerinin
+                            bir arada sunulduğu bu alan, Manavgat'ın sakinliğinde dinlenmek isteyen herkes için 
+                            mükemmel bir fırsattır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Sorgun, Titreyengöl Cd. No:3,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Boğaz Piknik Alanı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="bogaz">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="dalış">
+                <div class="üst" id="content">
+                    <h3>Side Su Altı Müzesi</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-26">
+                                <img src="SehirGörsel/dalış.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/dalış2.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/dalış3.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-26">
+                                <span class="dot" onclick="showSlide(1, 26)"></span>
+                                <span class="dot" onclick="showSlide(2, 26)"></span>
+                                <span class="dot" onclick="showSlide(3, 26)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Side Sualtı Müzesi, Avrupa'nın en büyük su altı müzesi olarak kabul edilir ve dalış tutkunları 
+                            için eşsiz bir deneyim sunar. Bu müzede, antik heykeller, batık gemiler ve diğer su altı 
+                            eserleri yer almaktadır. Side'de tüplü dalış turları, hem deneyimli dalgıçlar hem de ilk kez
+                            dalış yapacaklar için uygundur. Dalışlar 3 ila 8 metre derinlikte gerçekleştirilir ve her dalış
+                            yaklaşık 30 dakika sürer. Dalış öncesinde katılımcılara kısa bir eğitim verilir, tüm gerekli 
+                            ekipmanlar sağlanır ve profesyonel eğitmen eşliğinde gerçekleştirilir. Bazı turlar, su altı 
+                            fotoğrafçılığı hizmeti de sunmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Side, Liman Cd., 07330 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Side Tüplü Dalış Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="dalis">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="discovery">
+                <div class="üst" id="content">
+                    <h3>Discovery Park</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-27">
+                                <img src="SehirGörsel/discovery.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/discovery2.jpg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-27">
+                                <span class="dot" onclick="showSlide(1, 27)"></span>
+                                <span class="dot" onclick="showSlide(2, 27)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Discovery Park’ın en ilgi çekici alanlarından biri olan Dinopark, 48 adet sensörlü dinozor 
+                            figürüyle donatılmıştır. Ziyaretçiler, dinozorların tarihini öğrenirken, gerçekçi hareketler ve 
+                            sesler eşliğinde bu dev yaratıkları yakından gözlemleyebilirler. Çocuklar için özellikle 
+                            heyecan verici olan bu alan, hem eğlenceli hem de öğretici bir deneyim sunuyor. Hayvanat Bahçesi: 
+                            Parkın bir diğer bölümü ise çeşitli hayvan türlerinin sergilendiği Hayvanat Bahçesi'dir. Burada, 
+                            aslanlar, kaplanlar, lama, yaban domuzu gibi egzotik hayvanlar doğal yaşam alanlarına uygun 
+                            kafeslerde yaşamaktadır. Ziyaretçiler, bu hayvanları yakından gözlemleyerek, doğanın zenginliğine 
+                            dair keyifli bir keşif yapabilirler. Akvaryum: Parkta bulunan Akvaryum bölümü, deniz hayatını 
+                            keşfetmek isteyenler için harika bir fırsat sunuyor. Burada, farklı deniz canlılarının 
+                            sergilendiği akvaryumlar yer alır. Su altı dünyasını daha yakından keşfetmek ve deniz canlıları 
+                            hakkında bilgi edinmek isteyenler için mükemmel bir bölümdür. Kumanya Alanı: ziyaretçilere parkta 
+                            geçirdikleri süre boyunca dinlenme imkanı sunar. Farklı yiyecek ve içecek seçenekleri ile 
+                            ailelerin ve çocukların keyifle vakit geçirebileceği bir alandır. Ziyaretçiler burada 
+                            atıştırmalıklarını alabilir ve parkın atmosferinin tadını çıkarabilirler.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Ilıca, Antalya Blv., 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Discovery Park Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="discovery">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="cad">
+                <div class="üst" id="content">
+                    <h3>Antalya Cad. Ve İbrahim Sözen Cad. - Manavgat Merkez</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-28">
+                                <img src="SehirGörsel/cadde.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/merkez.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/merkez2.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-28">
+                                <span class="dot" onclick="showSlide(1, 28)"></span>
+                                <span class="dot" onclick="showSlide(2, 28)"></span>
+                                <span class="dot" onclick="showSlide(3, 28)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi">
+                            <p class="sesli metin">
+                            Manavgat’ın kalbinde yer alan Merkez Cadde, şehrin en canlı, en işlek ve en çok ziyaret 
+                            edilen noktalarından biridir. Hem yerli halk hem de turistler için sosyal yaşamın ve ticaretin 
+                            merkezi olan bu cadde, Manavgat Irmağı’na yürüme mesafesinde yer alır ve şehrin farklı 
+                            mahallelerine geçiş için önemli bir bağlantı noktasıdır. Cadde boyunca sıralanmış yerel esnaf 
+                            dükkânları, ulusal ve uluslararası markalar, kafeler, restoranlar, pastaneler ve giyim mağazaları, 
+                            ziyaretçilere geniş bir alışveriş ve yeme içme deneyimi sunar. Caddenin özellikle yaz 
+                            aylarında oldukça yoğun olduğu görülür. Şehrin eski çarşısı bu çevrede oluşmuş, zamanla modern 
+                            mağazalarla ve daha düzenli altyapıyla bugünkü görünümüne kavuşmuştur. Eskiden daha çok 
+                            semt pazarlarının ve yerel tüccarların merkezi olan cadde, günümüzde çağdaş bir alışveriş 
+                            aksı haline gelmiştir. Ayrıca cadde üzerinde zaman zaman kültürel etkinlikler, özel gün 
+                            kutlamaları ve festivaller düzenlenmektedir. Bu etkinlikler sayesinde cadde yalnızca 
+                            alışveriş değil, sosyal bir buluşma noktası olarak da işlev görür.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Yukarı Hisar, Antalya Cd.,<br>07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Merkez Cadde Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="merkez">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="macera">
+                <div class="üst" id="content">
+                    <h3>Oymapınar Macera Parkı</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-29">
+                                <img src="SehirGörsel/maceraParkı.jpg" class="slide" id="slide-1">
+                                <img src="SehirGörsel/maceraParkı3.jpg" class="slide" id="slide-2">
+                                <img src="SehirGörsel/maceraParkı2.jpg" class="slide" id="slide-3">
+                            </div>
+                            <div class="dots-container" id="dots-29">
+                                <span class="dot" onclick="showSlide(1, 29)"></span>
+                                <span class="dot" onclick="showSlide(2, 29)"></span>
+                                <span class="dot" onclick="showSlide(3, 29)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Oymapınar Barajı'nın kıyısında yer alan bir açık hava eğlence merkezidir. Yaklaşık 40 dönümlük 
+                            alanda kurulu olan bu park, doğa severler ve adrenalin tutkunları için çeşitli aktiviteler 
+                            sunmaktadır. Parkta, çam ağaçları arasında kurulu parkurlarda halatlarla geçiş, ip köprüler, 
+                            tahta köprüler ve 140 metre uzunluğunda zipline gibi etkinlikler bulunmaktadır. Bu aktiviteler, 
+                            katılımcıların denge, cesaret ve koordinasyon becerilerini test etmelerine olanak tanır. 
+                            Parkurun tamamlanması yaklaşık 2,5 saat sürmektedir. Oymapınar Macera Parkı, hem yerli hem de 
+                            yabancı turistlerin ilgisini çeken bir destinasyon olup, doğa ile iç içe bir gün geçirmek 
+                            isteyenler için ideal bir mekandır. Ziyaretçiler, hem eğlenceli hem de güvenli bir ortamda 
+                            macera dolu anlar yaşayabilirler.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Igrislar Mah, 1001 Sok, 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Oymapınar Macera Parkı Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="macera">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cont" id="ahmet">
+                <div class="üst" id="content">
+                    <h3>Ahmetler Kanyonu</h3><br>
+                    <div class="iç">
+                        <div class="foto">
+                            <div class="slider-container" id="slider-30">
+                                <img src="DogaGörsel/ahmetler.jpg" class="slide" id="slide-1">
+                                <img src="DogaGörsel/ahmetler2.jpg" class="slide" id="slide-2">
+                            </div>
+                            <div class="dots-container" id="dots-30">
+                                <span class="dot" onclick="showSlide(1, 30)"></span>
+                                <span class="dot" onclick="showSlide(2, 30)"></span>
+                            </div>
+                        </div>
+                        <div class="bilgi"><br>
+                            <p class="sesli metin">
+                            Ahmetler Kanyonu, Toroslar'dan beslenen Karpuz Çayı'nın oluşturduğu, doğa tutkunları için 
+                            adeta bir cennet. Yaklaşık 12 kilometre uzunluğunda ve bazı noktalarında 400 metreye kadar 
+                            derinleşen bu kanyon, Türkiye'nin en derin üçüncü kanyonu olma özelliğine sahip. Ahmetler Kanyonu, 
+                            dik yamaçlar ve sarp kayalıklarla çevrili olup, bu yapısı sayesinde güneş ışınlarını az alır ve 
+                            yaz aylarında serin bir atmosfer sunar. Kanyon boyunca yürüyüş yaparken, çağlayanlar, düdenler, 
+                            mağaralar ve sifonlar gibi doğal oluşumlarla karşılaşabilirsiniz. Bölge, kartal, akbaba, şahin gibi 
+                            yırtıcı kuş türlerinin yanı sıra dağ keçisi, sincap ve kaplumbağa gibi kara hayvanlarına da 
+                            ev sahipliği yapmaktadır. Berrak ve serin sularında yüzme imkânı, yaz aylarında serinlemek 
+                            isteyenler için cazip bir seçenek oluşturur. Kanyon çevresindeki alanlar, piknik ve kamp yapmak   
+                            isteyenler için uygun alanlar sunar. Ayrıca doğal güzellikler ve zengin ekosistem, fotoğraf 
+                            tutkunları için eşsiz kareler yakalama fırsatı sağlar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adres"><br><br>
+                        <p><strong>Adres : </strong>Köprübaşı Mevkii Ahmetler Mah. No:1,<br> 07600 Manavgat/Antalya</p><br>
+                        <button class="oku-btn" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">Sayfayı Sesli Oku</button>
+                    </div>
+                </div>
+                <br>
+                <div class="alt">
+                    <h3>Ahmetler Kanyonu Ziyaretçi Değerlendirme</h4>
+                    <div class="user">
+                        <h4>Tepkiniz Nedir?</h3>
+                        <div class="reactions" data-id="ahmetler">
+                            <!-- Emojiler buraya JS ile eklenecek -->
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-left">
+            <strong>İletişim</strong><br><br>
+            Tel: +90 555 555 55 55<br>
+            E-mail: ornek@ornek.com
+            <br><br><br>
+            <p>&copy; 2025 GEZGİL. Tüm hakları saklıdır.</p>
+        </div>
+        <div>
+            <br><strong class="bilgi">Sosyal Medya Hesaplarımız</strong>
+            <br><br>
+            <p>
+            <a href="https://www.instagram.com/bnur.karatag.6/?hl=tr" target="_blank"><img src="Görsel/instagram.png" width="50px" height="50x"></a>
+            <a href="#"><img src="Görsel/Youtube.png" width="50px" height="50x"></a>
+            <a href="https://wa.me/905372083223" target="_blank"><img src="Görsel/whatsapp.png" width="50px" height="50x"></a>
+            <a href="https://www.linkedin.com/in/hatice-k%C3%BCbra-%C3%BCnal-083aba329/" target="_blank"><img src="Görsel/linkedin.png" width="50px" height="50x"></a>
+            <a href="https://tr.pinterest.com/eleanor970797/gezgi%CC%87l-manavgat/" target="_blank"><img src="Görsel/pinterest.png" width="50px" height="50x"></a>
+            </p>
+        </div>
+        <div class="footer-center">
+            <strong>Adres : </strong><br><br>
+            Sivas Cumhuriyet Üniversitesi <br>/ Mühendislik Fakültesi
+        </div>
+    </footer>
+
+    <script>
+
+        function showSlide(slideIndex, sliderId) {
+            const slides = document.querySelectorAll(`#slider-${sliderId} .slide`);
+            const dots = document.querySelectorAll(`#dots-${sliderId} .dot`);
+
+            // Bütün fotoğrafları gizle
+            slides.forEach(slide => {
+                slide.style.display = "none";
+            });
+
+            // Bütün noktaların 'aktif' sınıfını kaldır
+            dots.forEach(dot => {
+                dot.classList.remove("active");
+            });
+
+            // Seçilen fotoğrafı göster
+            slides[slideIndex - 1].style.display = "block";
+            
+            // Aktif noktayı belirt
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlide(1, 1); // 1. slider için 1. fotoğrafı göster
+            showSlide(1, 2); // 2. slider için 1. fotoğrafı göster
+            showSlide(1, 3); // 3. slider için 1. fotoğrafı göster
+            showSlide(1, 4);
+            showSlide(1, 5);
+            showSlide(1, 6);
+            showSlide(1, 7);
+            showSlide(1, 8);
+            showSlide(1, 9);
+            showSlide(1, 10);
+            showSlide(1, 11);
+            showSlide(1, 12);
+            showSlide(1, 13);
+            showSlide(1, 14);
+            showSlide(1, 15);
+            showSlide(1, 16);
+            showSlide(1, 17);
+            showSlide(1, 18);
+            showSlide(1, 19);
+            showSlide(1, 20);
+            showSlide(1, 21);
+            showSlide(1, 22);
+            showSlide(1, 23);
+            showSlide(1, 24);
+            showSlide(1, 25);
+            showSlide(1, 26);
+            showSlide(1, 27);
+            showSlide(1, 28);
+            showSlide(1, 29);
+            showSlide(1, 30);
+        });
+
+        const reactions = [
+            { id: "begendim", emoji: "😍", label: "Bayıldım" },
+            { id: "begenmedim", emoji: "🥰", label: "Beğendim" },
+            { id: "sevdim", emoji: "🙂", label: "Hoştu" },
+            { id: "gulduk", emoji: "😐", label: "Ortalama" },
+            { id: "kizdim", emoji: "😲", label: "Şaşırdım" },
+            { id: "uzuldum", emoji: "😕", label: "Beğenmedim" },
+            { id: "sasirdim", emoji: "🙄", label: "Kötüydü" }
+            ];
+
+            document.querySelectorAll(".reactions").forEach(container => {
+    const uniqueId = container.getAttribute("data-id");
+    const countsKey = `counts-${uniqueId}`;
+    const voteKey = `vote-${uniqueId}`;
+
+    let counts = JSON.parse(localStorage.getItem(countsKey)) || {};
+    let userVote = localStorage.getItem(voteKey);
+
+    reactions.forEach(r => {
+      if (counts[r.id] === undefined) counts[r.id] = 0;
+    });
+
+    function render() {
+      container.innerHTML = "";
+      reactions.forEach(r => {
+        const div = document.createElement("div");
+        div.className = "reaction";
+        div.onclick = () => handleVote(r.id);
+
+        div.innerHTML = `
+          <div class="emoji">${r.emoji}</div>
+          <div class="count">${counts[r.id]}</div>
+          <div class="label">${r.label}</div>
+        `;
+
+        if (userVote === r.id) {
+          div.style.backgroundColor = "#d3f0ff";
+        }
+
+        container.appendChild(div);
+      });
+    }
+
+    function handleVote(id) {
+      if (userVote === id) {
+        counts[id]--;
+        userVote = null;
+        localStorage.removeItem(voteKey);
+      } else {
+        if (userVote) counts[userVote]--;
+        counts[id]++;
+        userVote = id;
+        localStorage.setItem(voteKey, id);
+      }
+
+      localStorage.setItem(countsKey, JSON.stringify(counts));
+      render();
+    }
+
+    render();
+  });
+
+   function searchTitle() {
+    const input = document.getElementById("searchInput").value.trim().toLowerCase();
+    const titles = document.querySelectorAll("#content h3");
+    let found = false;
+
+    // Önce tüm başlıklardan vurguyu kaldır
+    titles.forEach(title => title.classList.remove("highlight"));
+
+    // Başlıkları dolaş ve eşleşen varsa vurgula ve kaydır
+    titles.forEach(title => {
+      const titleText = title.textContent.trim().toLowerCase();
+      if (titleText === input) {
+        title.scrollIntoView({ behavior: "smooth", block: "center" }); // sayfaya kaydır
+        found = true;
+      }
+    });
+
+    // Eşleşme yoksa uyarı göster
+    const errorDiv = document.getElementById("error");
+    if (!found) {
+      errorDiv.textContent = "Aradığınız başlık bulunamadı.";
+    } else {
+      errorDiv.textContent = "";
+    }
+  }
+
+  const buttons = document.querySelectorAll('.oku-btn');
+  let konusuyor = false;
+  let aktifMesaj = null;
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Butonun bulunduğu kutudaki .sesli.metin elemanını bul
+      const metinElem = button.closest('.cont').querySelector('.sesli.metin');
+
+      if (!metinElem) {
+        console.warn("Metin bulunamadı.");
+        return;
+      }
+
+      const metin = metinElem.textContent;
+
+      // Aynı metni tekrar okuyorsa: durdur
+      if (konusuyor && aktifMesaj && aktifMesaj.text === metin) {
+        window.speechSynthesis.cancel();
+        konusuyor = false;
+        aktifMesaj = null;
+        button.textContent = "Metni Sesli Oku";
+        return;
+      }
+
+      // Başka metin okunuyorsa: durdur ve yenisini başlat
+      if (konusuyor) {
+        window.speechSynthesis.cancel();
+        document.querySelectorAll('.oku-btn').forEach(b => b.textContent = "Metni Sesli Oku");
+      }
+
+      const msg = new SpeechSynthesisUtterance(metin);
+      msg.lang = 'tr-TR';
+      msg.rate = 1;
+      msg.pitch = 1;
+
+      msg.onstart = () => {
+        konusuyor = true;
+        aktifMesaj = msg;
+        button.textContent = "Durdur";
+      };
+
+      msg.onend = () => {
+        konusuyor = false;
+        aktifMesaj = null;
+        button.textContent = "Metni Sesli Oku";
+      };
+
+      window.speechSynthesis.speak(msg);
+    });
+  });
+
+
+
+    const fontToggleBtn = document.getElementById('fontToggleBtn');
+let buyukYaziAktif = false;
+
+fontToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('buyuk-yazi');
+  buyukYaziAktif = !buyukYaziAktif;
+  fontToggleBtn.textContent = buyukYaziAktif ? 'Yazıları Küçült' : 'Yazıları Büyüt';
+});
+    </script>
+
+</body>
+</html>

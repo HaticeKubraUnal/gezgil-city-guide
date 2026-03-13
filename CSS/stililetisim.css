@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(Görsel/pin4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    font-family: Arial rgb(33, 33, 33);
+    flex-wrap: wrap;
+  }
+
+  .header-left, .header-center, .header-right {
+    flex: 1;
+    text-align: center;
+  }
+
+  .header-left {
+    text-align: left;
+    padding-right: 10px;
+  }
+  
+  .header-right {
+    font-size: 17px;
+    text-align: right;
+    font-family: 'Segoe UI', sans-serif;
+    padding-right: 20px;
+  }
+
+  .header-right a {
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 15px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 150px);
+    padding-top: 20px;
+}
+
+.genel {
+    position: relative;
+    padding: 30px;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+
+}
+
+.genel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.genel > * {
+    position: relative;
+    z-index: 2;
+}
+
+.iletisim, .mail, .sosyal {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.ayrac {
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-top: 2px solid;
+}
+
+.sosyal a img {
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .header-left, .header-center, .header-right {
+      flex: unset;
+      width: 100%;
+      text-align: center;
+      margin: 0px 0;
+    }
+  
+    .header-left {
+      order: 2;
+    }
+  
+    .header-center {
+      order: 1;
+    }
+  
+    .header-right {
+      order: 3;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 10px;
+    }
+
+    .genel {
+      margin-top: 50px;
+    }
+  }

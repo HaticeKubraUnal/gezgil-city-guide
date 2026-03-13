@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(Görsel/giris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    font-family: Arial Black;
+    flex-wrap: wrap;
+  }
+
+  .header-left, .header-center, .header-right {
+    flex: 1;
+    text-align: center;
+  }
+  .header-left {
+    text-align: left;
+  }
+  .header-right {
+    text-align: right;
+    font-family: 'Segoe UI', sans-serif;
+    padding-right: 10px;
+  }
+  .slogan {
+    font-family: Bahnschrift Condensed;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  nav a:link, nav a:visited, nav a:active {
+  color: white;
+  text-decoration: none;
+  }
+
+  section {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+  }
+
+  .secenek {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .secenek-kutu {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secenek-kutu a {
+    color: white;
+    font-family: Arial Black;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 1;
+  }
+  
+  .secenek-kutu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 0;
+  }
+  
+  .tarih {
+    background-image: url('Görsel/tarihi.jpg');
+  }
+  
+  .sehir {
+    background-image: url('Görsel/sehir5.jpeg');
+  }
+  
+  .genel {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 1%;
+    color: white;
+  }
+
+  .iç {
+    padding: 50px;
+  }
+
+  .iç img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+  }
+
+  .yer1, .yer2, .yer3, .yer4, .yer5, .yer6, .yer7, .yer8, .yer9, .yer10, .yer11{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .yer1 div, .yer2 div, .yer3 div, .yer4 div, .yer5 div, .yer6 div, .yer7 div, .yer8 div, .yer9 div, .yer10 div, .yer11 div {
+    flex: 1;
+  }
+
+  .yer1 h3, .yer1 p,
+  .yer2 h3, .yer2 p,
+  .yer3 h3, .yer3 p,
+  .yer4 h3, .yer4 p,
+  .yer5 h3, .yer5 p,
+  .yer6 h3, .yer6 p,
+  .yer7 h3, .yer7 p,
+  .yer8 h3, .yer8 p,
+  .yer9 h3, .yer9 p,
+  .yer10 h3, .yer10 p, 
+  .yer11 h3, .yer11 p {
+    font-family: 'Bahnschrift Light SemiCondensed', sans-serif;
+    line-height: 1.5;
+  }
+
+  .daha {
+    text-align: right;
+    padding-right: 15px;
+  }
+  
+  .genel .iç a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .genel .iç a:hover {
+    color: rgb(44, 106, 120);
+  }
+
+  .ayrac {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .yer1, .yer2, .yer3, .yer4, .yer5, .yer6, .yer7, .yer8, .yer9, .yer10, .yer11 {
+      flex-direction: column;
+      text-align: center;
+    }
+    .ayrac {
+      width: 100%;
+    }
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-left, .header-center, .header-right {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
